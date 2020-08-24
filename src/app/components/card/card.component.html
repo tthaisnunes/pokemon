@@ -1,0 +1,13 @@
+<div class="card">
+  <img src="{{CardItem?.imageUrl}}" alt="{{CardItem?.name}}">
+
+  <p class="id">{{CardItem?.id}}</p>
+  <p class="title">{{CardItem?.name}}</p>
+
+  <div class="chip-list">
+    <div class="chip" *ngFor="let item of CardItem?.types">
+      {{item}}
+    </div>
+  </div>
+
+</div>

@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/scss/reset.scss";
+
+@import "./assets/scss/variables.scss";
+
+@import "./assets/scss/texts.scss";
+@import "./assets/scss/forms.scss";
+@import "./assets/scss/chips.scss";
+@import "./assets/scss/images.scss";
+@import "./assets/scss/loading.scss";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

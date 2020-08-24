@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="25cd3d63291054e69453bb137990605d49f5d7bc" datatype="html">
+        <source>Ataque</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">attack</note>
+      </trans-unit>
+      <trans-unit id="e65502217da1909b30bd250059cec40dc4ba7f76" datatype="html">
+        <source>Nome: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">name</note>
+      </trans-unit>
+      <trans-unit id="30e7656c8cbbb7e37daa6dc2f286c296549a1222" datatype="html">
+        <source> Descrição: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">description</note>
+      </trans-unit>
+      <trans-unit id="7290114c3a52830338ff0b117ea57d0450edad02" datatype="html">
+        <source>Dano: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">damage</note>
+      </trans-unit>
+      <trans-unit id="9d8a2cec929345c67ba3e75e0bf8c06866e69c3b" datatype="html">
+        <source>Custo convertido: </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">converted energy cost</note>
+      </trans-unit>
+      <trans-unit id="41b449e2a925f402c06c25375f70d8e146ecd1a3" datatype="html">
+        <source>Custo:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/attack-details/attack-details.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">cost</note>
+      </trans-unit>
+      <trans-unit id="98e56e4f8e9b4aa90a72356253ec15ffd529502f" datatype="html">
+        <source>Detalhes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-details/card-details.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">details</note>
+      </trans-unit>
+      <trans-unit id="5bdf90407d208bb312d10dd0190cc0c0f78ed886" datatype="html">
+        <source>Tipos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-details/card-details.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">types</note>
+      </trans-unit>
+      <trans-unit id="04b9681dd22dd8730eab03035b2c7ff6073f9926" datatype="html">
+        <source>Fraquezas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-details/card-details.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <note priority="1" from="description">weaknesses</note>
+      </trans-unit>
+      <trans-unit id="25483bc0eca1be3d23f119585bb9df9d8475fdbf" datatype="html">
+        <source>Resistências</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-details/card-details.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">resistances</note>
+      </trans-unit>
+      <trans-unit id="1a0cd10a3ff2da3fa033b09c515c23b4d24192fa" datatype="html">
+        <source>Ataques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-details/card-details.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">attacks</note>
+      </trans-unit>
+      <trans-unit id="8c853dcf6fa4f01e637a9a37f10e64eaf3198ecf" datatype="html">
+        <source>Pokemón</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/containers/card-list/card-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">pokemon</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

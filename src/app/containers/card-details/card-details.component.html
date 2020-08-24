@@ -1,0 +1,51 @@
+<div class="page-title">
+  <p i18n="details">Detalhes</p>
+  <button mat-icon-button (click)="closePage()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div class="card-details {{card?.types ? card?.types[0] : '' }}">
+  <div class="loading" *ngIf="loading">
+    <mat-spinner [diameter]="30" [strokeWidth]="5"></mat-spinner>
+  </div>
+
+  <div>
+    <img src="{{card?.imageUrlHiRes}}" alt="{{card?.name}}">
+  </div>
+
+  <div>
+    <p class="id">{{card?.id}}</p>
+    <p class="title">{{card?.name}}</p>
+
+    <p class="subtitle" *ngIf="card?.types" i18n="types">Tipos</p>
+    <div class="chip-list">
+      <div class="chip" *ngFor="let item of card?.types">
+        {{item}}
+      </div>
+    </div>
+
+    <p class="subtitle" *ngIf="card?.weaknesses" i18n="weaknesses">Fraquezas</p>
+    <div class="chip-list">
+      <div class="chip" *ngFor="let item of card?.weaknesses">
+        {{item.type}} {{item.value}}
+      </div>
+    </div>
+
+    <p class="subtitle" *ngIf="card?.resistances" i18n="resistances">Resistências</p>
+    <div class="chip-list">
+      <div class="chip" *ngFor="let item of card?.resistances">
+        {{item.type}} {{item.value}}
+      </div>
+    </div>
+
+    <p class="subtitle" *ngIf="card?.attacks" i18n="attacks">Ataques</p>
+    <div *ngFor="let item of card?.attacks" class="attack-link" (click)="openDialog(item)">
+      <button mat-icon-button>
+        <mat-icon>open_in_new</mat-icon>
+      </button>
+      <p>{{item.name}}</p>
+    </div>
+  </div>
+
+</div>

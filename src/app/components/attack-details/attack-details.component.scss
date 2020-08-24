@@ -1,0 +1,13 @@
+@import "src/assets/scss/variables.scss";
+
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-modal {
+  padding: 10px;
+  background: $light-grey;
+  border: solid 1px $medium-gray;
+}

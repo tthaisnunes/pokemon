@@ -1,0 +1,40 @@
+<mat-toolbar>
+  <span i18n="pokemon">Pokemón</span>
+</mat-toolbar>
+
+<div class="container">
+  <div class="loading" *ngIf="loading">
+    <mat-spinner [diameter]="30" [strokeWidth]="5"></mat-spinner>
+  </div>
+
+  <div>
+    <div class="fields-container">
+      <mat-form-field>
+        <input matInput placeholder="Buscar por nome" [(ngModel)]="searchValue" (keyup)="search($event)">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <!-- display a grid cards on desktop apps -->
+  <div class="card-list" *ngIf="!mobileQuery.matches">
+    <a *ngFor="let item of cardsList?.cards" [routerLink]="['/card', item.id]">
+      <app-card [CardItem]=item></app-card>
+    </a>
+  </div>
+
+  <!-- display a carousel cards on mobile apps -->
+  <mat-carousel *ngIf="mobileQuery.matches" timings="250ms ease-in" [hideArrows]="false" [hideIndicators]="true"
+    [useMouseWheel]="false" orientation="ltr" [loop]="true" [autoplay]="false" [maintainAspectRatio]=false
+    color="primary">
+    <mat-carousel-slide #matCarouselSlide *ngFor="let item of cardsList?.cards; let i = index" [hideOverlay]="true">
+      <a *ngFor="let item of cardsList?.cards" [routerLink]="['/card', item.id]">
+        <app-card [CardItem]=item></app-card>
+      </a>
+    </mat-carousel-slide>
+  </mat-carousel>
+
+  <mat-paginator [length]="listItensLength" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions"
+    [showFirstLastButtons]="true" (page)="pageEvent = handlePagination($event)">
+  </mat-paginator>
+
+</div>

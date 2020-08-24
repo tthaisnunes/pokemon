@@ -1,0 +1,21 @@
+<div class="page-title">
+  <p i18n="attack">Ataque</p>
+  <button mat-icon-button (click)="onNoClick()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<div class="content-modal">
+  <p *ngIf="data?.name"> <span i18n="name">Nome: </span> <strong>{{data?.name}}</strong></p>
+  <p *ngIf="data?.text"> <span i18n="description"> Descrição: </span> <strong>{{data?.text}}</strong></p>
+  <p *ngIf="data?.damage"> <span i18n="damage">Dano: </span> <strong>{{data?.damage}}</strong></p>
+  <p *ngIf="data?.convertedEnergyCost"><span i18n="converted energy cost">Custo convertido: </span>
+    <strong>{{data?.convertedEnergyCost}}</strong></p>
+
+  <p i18n="cost">Custo:</p>
+  <div class="chip-list">
+    <div class="chip" *ngFor="let item of data?.cost">
+      {{item}}
+    </div>
+  </div>
+</div>
